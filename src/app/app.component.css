@@ -1,0 +1,81 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+
+header, main, footer {
+    position: relative;
+    overflow: hidden;
+}
+
+header, footer {
+    height:5%;
+    width: 100%;
+}
+
+header {
+    background: rgba(0, 0, 0, 0) linear-gradient(#56585d, #2f3034);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+    font-family: 'Baloo Paaji', cursive,​ Calibri,​ sans-serif;
+    color: #fff;
+    font-size: 1.5em;
+    height: 100%;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 90%;
+    width: 90%;
+    padding: 0 48px;
+    font-size: 1.6em;
+}
+
+main.slider-container {
+    /*background: url('/src/images/angular.svg') no-repeat center center, linear-gradient(#f4fafe,#ccf0f0);*/
+    background: linear-gradient(#f4fafe,#ccf0f0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+main .next-link, main .prev-link {
+    cursor: pointer;
+    background: #fff;
+    opacity: 0.75;
+    border-radius: 16px;
+    color: #7AA;
+    font-size: 16px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin-top: -16px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    vertical-align: middle;
+    width: 32px;
+}
+
+main .prev-link {
+    left: 8px;
+}
+
+main .next-link {
+    right: 8px;
+}
+
+footer {
+    /*position:fixed;*/
+    width:100%;
+    bottom:0;
+
+    text-align: center;
+    padding: 10px 0;
+}

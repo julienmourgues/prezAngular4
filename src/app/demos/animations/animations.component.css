@@ -1,0 +1,17 @@
+.buttons {
+  text-align: center;
+}
+button {
+  padding: 5px 15px;
+}
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+}
+.column p {
+  min-height: 6em;
+}

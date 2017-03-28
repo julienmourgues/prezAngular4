@@ -1,0 +1,81 @@
+<div class="slide">
+    <h1 class="main-title">{{slide.title}}</h1>
+    
+    <section class="fragments">
+        <div *ngFor="let fragment of slide.fragments" [ngClass]="[fragment.className, fragment.constructor.name]">
+            <!-- SubTitleFragment -->
+            <h2 *ngIf="isShowable(fragment,'SubTitleFragment')"
+                class="subtitle-fragment"
+                [innerHTML]="fragment.content"></h2>
+                
+            <!-- HTMLFragment -->
+            <div *ngIf="isShowable(fragment,'HTMLFragment')"
+                class="html-fragment" [ngClass]="[fragment.innerClassName]"
+                [innerHTML]="fragment.content" (click)="$event.stopPropagation()"></div>
+                
+            <!-- TextFragment -->
+            <p *ngIf="isShowable(fragment,'TextFragment')"
+                class="text-fragment"
+                [innerHTML]="fragment.content"></p>
+                
+            <!-- InlineTextFragment -->
+            <span *ngIf="isShowable(fragment,'InlineTextFragment')" 
+                class="inline-text-fragment"
+                [innerHTML]="fragment.content"></span>
+                
+            <!-- CodeFragment -->
+            <section *ngIf="isShowable(fragment,'CodeFragment')" 
+                class="code-fragment"
+                [innerHTML]="fragment.content" highlight-js-content=".highlight"></section>
+                
+            <!-- ImageFragment -->
+            <img *ngIf="isShowable(fragment,'ImageFragment')" 
+                class="image-fragment"
+                [src]="fragment.content" />
+                
+            <!-- LinkFragment -->
+            <a *ngIf="isShowable(fragment,'LinkFragment')" 
+                class="link-fragment"
+                [href]="fragment.href" [innerHTML]="fragment.content"></a>
+                
+            <!-- QuoteFragment -->
+            <div *ngIf="isShowable(fragment,'QuoteFragment')" 
+                class="quote-fragment">
+                <blockquote [innerHTML]="fragment.content"></blockquote>
+            </div>
+
+            <!-- ListFragment -->
+            <ul *ngIf="isShowable(fragment,'ListFragment')" 
+                class="list-fragment">
+                <li *ngFor="let content of fragment.content"><div [innerHTML]="content" class="content"></div></li>
+            </ul>
+
+            <!-- OrderedListFragment -->
+            <ol *ngIf="isShowable(fragment,'OrderedListFragment')" 
+                class="ordered list-fragment">
+                <li *ngFor="let content of fragment.content"><div [innerHTML]="content" class="content"></div></li>
+            </ol>
+                
+            <!-- DemoFragment > databinding -->
+            <databinding *ngIf="isShowable(fragment,'DemoFragment') && fragment.type === 'databinding'"            
+                class="pull-right demo"></databinding>
+            <!-- DemoFragment > metadata -->
+            <metadata *ngIf="isShowable(fragment,'DemoFragment') && fragment.type === 'metadata'"            
+                class="pull-right demo"></metadata>
+            <!-- DemoFragment > pipe -->
+            <pipe *ngIf="isShowable(fragment,'DemoFragment') && fragment.type === 'pipe'"
+                class="pull-right demo"></pipe>
+            <!-- DemoFragment > routing -->
+            <routing *ngIf="isShowable(fragment,'DemoFragment') && fragment.type === 'routing'"
+                class="pull-right demo"></routing>
+            <!-- DemoFragment > animations -->
+            <animations *ngIf="isShowable(fragment,'DemoFragment') && fragment.type === 'animations'"
+                class="pull-right demo"></animations>
+            <!-- DemoFragment > directive -->
+            <p yellow *ngIf="isShowable(fragment,'DemoFragment') && fragment.type === 'directive'"
+                class="pull-right demo">DIRECTIVE : Je deviens jaune au survol !</p>
+        </div>
+    </section>
+</div>
+<div class="slide-number">N°&nbsp;{{slide.id}}</div>
+<div class="slide-speaker">{{getSpeaker()}}</div>

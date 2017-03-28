@@ -1,0 +1,13 @@
+<header>
+    <h1><img src="/src/images/angular.svg" height="30"/>&nbsp;Technos - Angular 4</h1>
+</header>
+<main class="slider-container">
+    <slide [slide]="selectedSlide" [counter]="stepCounter"></slide>
+    <nav>
+        <a (click)="$event.stopPropagation();previousStep()"><i class="prev-link fa fa-2x fa-backward"></i></a>
+        <a (click)="$event.stopPropagation();nextStep()"><i class="next-link fa fa-2x fa-forward"></i></a>
+    </nav>
+</main>
+<footer>
+    <thumbnails [thumbnails]="slides" [selected-thumbnail]="selectedSlide"></thumbnails>
+</footer>

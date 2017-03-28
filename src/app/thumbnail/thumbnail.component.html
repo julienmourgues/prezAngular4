@@ -1,0 +1,4 @@
+<a (click)="$event.stopPropagation();changeSelectedSlide(thumbnail)"
+    title="N° {{thumbnail.id}} - {{thumbnail.title}}">
+    <i class="fa" [ngClass]="{'fa-circle-o':selected, 'fa-circle':!selected}"></i>
+</a>

@@ -1,0 +1,5 @@
+<h3>Pipe</h3>
+<input class="form-control" [(ngModel)]="filtre" placeholder="Contient le texte ..." (click)="$event.stopPropagation()"/>
+<ul>
+   <li *ngFor="let item of items | myfilter:filtre">{{item}}</li>
+</ul>

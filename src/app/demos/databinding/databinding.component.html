@@ -1,0 +1,8 @@
+<h3>One Way Binding</h3>
+Valeur initiale : {{value}}
+<br>
+<br>
+<h3>Two Way Binding / Event</h3>
+<input class="form-control" [(ngModel)]="property" placeholder="Entrer une valeur" (click)="$event.stopPropagation()"/>
+<button *ngIf="property" class="btn btn-primary" (click)="$event.stopPropagation();afficherValeurProperty();">Event</button>
+<p *ngIf="property">Two Way binding : {{property}}</p>

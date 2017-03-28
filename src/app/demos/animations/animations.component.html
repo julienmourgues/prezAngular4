@@ -1,0 +1,9 @@
+<div class="buttons">
+    <button [disabled]="!speakers.canAdd()" (click)="$event.stopPropagation();speakers.addInactive()">Ajout</button>
+    <button [disabled]="!speakers.canRemove()" (click)="$event.stopPropagation();speakers.remove()">Supprime</button>
+</div>
+<div class="columns">
+    <div class="column">
+    <animations-in-out [speakers]=speakers></animations-in-out>
+    </div>
+</div>

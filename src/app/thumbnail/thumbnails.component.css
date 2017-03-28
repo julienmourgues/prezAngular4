@@ -1,0 +1,9 @@
+.thumbnail:hover {
+    position: relative;
+    top: -5px;
+    font-size: 1.2em;
+}
+
+.previousThumbnail {
+    color:dimgrey;
+}

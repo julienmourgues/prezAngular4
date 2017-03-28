@@ -1,0 +1,8 @@
+<thumbnail
+        *ngFor="let thumbnail of thumbnails"
+        class="thumbnail"
+        [thumbnail]="thumbnail"
+        [selected]="thumbnail.id == selectedThumbnail.id"
+        [class.previousThumbnail]="thumbnail.id < selectedThumbnail.id">
+</thumbnail>
+
