@@ -10,8 +10,7 @@ subTitle.hideOnStep = 1;
 SLIDE_4_7.pushFragments(subTitle);
 
 let list = new ListFragment();
-list.pushContent('NPM + Webpack');
-list.pushContent('NPM (+ Bower) + SystemJS + Grunt ou Gulp');
+list.pushContent('<b>NPM + Webpack</b>');
 list.hideOnStep = 1;
 SLIDE_4_7.pushFragments(list);
 

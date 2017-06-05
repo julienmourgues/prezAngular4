@@ -4,13 +4,13 @@ import {
 } from "../slide.model";
 import {TITRE5} from "../slide.constantes";
 
-export const SLIDE_4_4: Slide = new Slide();
-SLIDE_4_4.title = TITRE5;
+export const SLIDE_4_3: Slide = new Slide();
+SLIDE_4_3.title = TITRE5;
 
 let subTitle = new SubTitleFragment();
 subTitle.content = 'Webpack';
 subTitle.hideOnStep = 2;
-SLIDE_4_4.pushFragments(subTitle);
+SLIDE_4_3.pushFragments(subTitle);
 
 let quote1 = new QuoteFragment();
 quote1.content = `
@@ -18,18 +18,18 @@ Webpack is a powerful <strong>module bundler</strong>. A bundle is a JavaScript 
 <strong>Webpack roams over your application source code, looking for import statements, building a dependency graph, and emitting one (or more) bundles</strong>. <strong>With plugin</strong> "loaders" Webpack can preprocess and minify different non-JavaScript files such as TypeScript, SASS, and LESS files.
 `;
 quote1.hideOnStep=1;
-SLIDE_4_4.pushFragments(quote1);
+SLIDE_4_3.pushFragments(quote1);
 
 let img1 = new ImageFragment();
 img1.content = '/src/images/webpack.png';
 img1.stepNumber=1;
 img1.hideOnStep=2;
-SLIDE_4_4.pushFragments(img1);
+SLIDE_4_3.pushFragments(img1);
 
 
 let subTitleLibExt = new SubTitleFragment();
 subTitleLibExt.content = 'Webpack - Chargement librairies';
-SLIDE_4_4.pushFragments(subTitleLibExt);
+SLIDE_4_3.pushFragments(subTitleLibExt);
 subTitleLibExt.stepNumber=2;
 subTitleLibExt.hideOnStep=3;
 
@@ -63,12 +63,12 @@ import 'bootstrap/dist/css/bootstrap.css'
 `;
 code1.stepNumber=2;
 code1.hideOnStep=3;
-SLIDE_4_4.pushFragments(code1);
+SLIDE_4_3.pushFragments(code1);
 
 let subTitle2 = new SubTitleFragment();
 subTitle2.content = 'Webpack';
 subTitle2.stepNumber = 3;
-SLIDE_4_4.pushFragments(subTitle2);
+SLIDE_4_3.pushFragments(subTitle2);
 
 let html1 = new HTMLFragment();
 html1.content = `<p>Webpack, étendu par des plugins peut :</p>
@@ -78,5 +78,5 @@ html1.content = `<p>Webpack, étendu par des plugins peut :</p>
 </ul>
 <p>Aller plus loin : <a href="https://angular.io/docs/ts/latest/guide/webpack.html">WEBPACK: AN INTRODUCTION</a></p>`;
 html1.stepNumber=3;
-SLIDE_4_4.pushFragments(html1);
+SLIDE_4_3.pushFragments(html1);
 

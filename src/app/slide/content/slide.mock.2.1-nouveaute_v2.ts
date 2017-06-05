@@ -19,7 +19,7 @@ SLIDE_2_1.pushFragments(img1);
 
 let list1 = new ListFragment();
 list1.className='no-list-style-type';
-list1.pushContent('<h1>Angular2 = Réécriture totale du framework<h1>');
+list1.pushContent('<h1>Angular = Réécriture totale du framework<h1>');
 list1.pushContent('Conservation des notions mais <strong>implémentation différente</strong>');
 list1.pushContent('Changement du langage de développement');
 list1.pushContent('Pas de rétrocompatibilité (ou presque; cf: upgradeAdapter)');
@@ -29,14 +29,12 @@ SLIDE_2_1.pushFragments(list1);
 
 let list2 = new ListFragment();
 list2.className='no-list-style-type';
-list2.pushContent('<h1>Angular2 = Réécriture totale du framework<h1>');
+list2.pushContent('<h1>Angular = Réécriture totale du framework<h1>');
 list2.pushContent('Conservation des notions mais <strong>implémentation différente</strong>');
 list2.pushContent('Changement du langage de développement');
-list2.pushContent('Pas de rétrocompatibilité');
+list2.pushContent('Pas de rétrocompatibilité (ou presque; cf: upgradeAdapter)');
 list2.pushContent('Migration manuelle inévitable');
 list2.pushContent(`<ul> 
-    <li>Des outils internes Google devraient sortir pour <u>faciliter</u> la migration</li>
-    <li>Pas de date officielle pour le moment</li>
     <li><a href="https://angular.io/docs/ts/latest/guide/upgrade.html">Guide sur le site officiel</a></li>
 </ul>`);
 list2.stepNumber=2;
@@ -48,7 +46,7 @@ list3.className='no-list-style-type';
 list3.pushContent('<h1>Angular = Réécriture totale du framework<h1>');
 list3.pushContent('Conservation des notions mais <strong>implémentation différente</strong>');
 list3.pushContent('Changement du langage de développement');
-list3.pushContent('Pas de rétrocompatibilité');
+list3.pushContent('Pas de rétrocompatibilité (ou presque; cf: upgradeAdapter)');
 list3.pushContent('Migration manuelle inévitable');
 list3.pushContent('Les questions à se poser'); 
 list3.pushContent(`<ul> 

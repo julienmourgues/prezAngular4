@@ -1,4 +1,4 @@
-import {Slide, SubTitleFragment, ListFragment, HTMLFragment, Speaker} from "../slide.model";
+import {Slide, SubTitleFragment, ListFragment, HTMLFragment, Speaker, QuoteFragment} from "../slide.model";
 import {TITRE3} from "../slide.constantes";
 
 export const SLIDE_2_3: Slide = new Slide();
@@ -16,8 +16,15 @@ list1.pushContent('Annotations (Décorateur) : apporté par la collaboration ent
 list1.pushContent('Nécessite transpilation TS => ES6 / ES5');
 SLIDE_2_3.pushFragments(list1);
 
+let quote1 = new QuoteFragment();
+quote1.content = `
+<strong>At ng-conf 2017, Brad Green, Engineering Director at Google, indicated that TypeScript is now an official language at Google. 
+For developers worrying about Dart status, he clarified that both Dart and TypeScript will be in the same category.</strong>`;
+quote1.stepNumber = 1;
+SLIDE_2_3.pushFragments(quote1);
+
 let html = new HTMLFragment();
 html.innerClassName = 'alert alert-info';
 html.content = 'Proche du langage Google Dart';
-html.stepNumber = 1;
+html.stepNumber = 2;
 SLIDE_2_3.pushFragments(html)

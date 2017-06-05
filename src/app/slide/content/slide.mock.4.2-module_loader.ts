@@ -14,6 +14,3 @@ list.pushContent('Chargement des scripts applicatifs');
 list.pushContent('Chargement des librairies extérieures');
 SLIDE_4_2.pushFragments(list);
 
-let quote1 = new QuoteFragment();
-quote1.content = 'SYSTEMJS OR WEBPACK? Use the module loader that you prefer';
-SLIDE_4_2.pushFragments(quote1);

@@ -10,6 +10,7 @@ subTitle.hideOnStep = 1;
 SLIDE_4_0.pushFragments(subTitle);
 
 let list = new ListFragment();
+list.pushContent('Création de squelette d\'application');
 list.pushContent('Chargement des modules');
 list.pushContent('Gestionnaire de dépendances');
 list.pushContent('Lancement serveur lite');

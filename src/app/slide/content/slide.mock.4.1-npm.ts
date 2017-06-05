@@ -66,12 +66,10 @@ code2.content = `
     <code class="javascript highlight">//package.json (suite)
 {
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "lite": "lite-server",
-    "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings"
+    "start": "webpack-dev-server --inline --progress --port 5000",
+    "test": "karma start",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "postinstall": "typings install"
 }</code>
 </pre>
 `;

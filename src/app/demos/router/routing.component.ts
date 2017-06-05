@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import { Router, ActivatedRoute } from '@angular/router';
+import { RouterOutlet, Router, ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'routing',
