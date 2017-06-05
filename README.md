@@ -15,4 +15,4 @@ Cette application utilise webpack :
     npm install
     npm start
 
-L'application est disponible à l'URL : http://localhost:5000/prezAngular4/
+L'application est disponible à l'URL : http://localhost:5000/prezAngular
