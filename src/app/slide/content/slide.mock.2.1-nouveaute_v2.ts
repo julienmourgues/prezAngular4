@@ -45,7 +45,7 @@ SLIDE_2_1.pushFragments(list2);
 
 let list3 = new ListFragment();
 list3.className='no-list-style-type';
-list3.pushContent('<h1>Angular2 = Réécriture totale du framework<h1>');
+list3.pushContent('<h1>Angular = Réécriture totale du framework<h1>');
 list3.pushContent('Conservation des notions mais <strong>implémentation différente</strong>');
 list3.pushContent('Changement du langage de développement');
 list3.pushContent('Pas de rétrocompatibilité');

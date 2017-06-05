@@ -70,7 +70,7 @@ code3.content = `
 <pre>
     <code class="html highlight">&lt;!-- app.component.html --&gt;
 &lt;header&gt;
-    &lt;h1&gt;&lt;img src=&quot;/src/images/angular.svg&quot;/&gt;&amp;nbsp;Techlunch - Angular 2&lt;/h1&gt;
+    &lt;h1&gt;&lt;img src=&quot;/src/images/angular.svg&quot;/&gt;&amp;nbsp;Technoz - Angular&lt;/h1&gt;
 &lt;/header&gt;
 &lt;main class=&quot;slider-container&quot;&gt;
     &lt;slide [slide]=&quot;selectedSlide&quot; [counter]=&quot;stepCounter&quot;&gt;&lt;/slide&gt;
