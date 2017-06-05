@@ -1,12 +1,12 @@
-# prezAngular4
+# prezAngular
 
-Ce projet contient le diaparoma de présentation de Angular 4
+Ce projet contient le diaparoma de présentation de Angular
 
 __prerequis__
-* Nodejs 7
+* Nodejs / NPM
 
 __Guide installation des pré-requis :__
-* NodeJs : https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+* NodeJs : https://nodejs.org/en/download/
 
 ### Lancement du projet
 

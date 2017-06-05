@@ -3,7 +3,7 @@ export class Slide {
     private _title: string;
     private _nbSteps: number = 0;
     private _fragments: Array<Fragment<any>> = new Array<Fragment<any>>();
-    private _speaker: Speaker = Speaker.AR;
+    private _speaker: Speaker = Speaker.JM;
 
     set id(id: number) {
         this._id = id;
@@ -47,7 +47,7 @@ export class Slide {
 }
 
 export enum Speaker {
-    A, R, AR
+    JM
 }
 
 export abstract class Fragment<T> {

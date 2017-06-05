@@ -17,7 +17,7 @@ list.pushContent('Tri tableau');
 list.pushContent('Formattage d\'une donnée (date...)');
 list.hideOnStep=1;
 SLIDE_3_4.pushFragments(list);
-SLIDE_3_4.speaker = Speaker.R;
+SLIDE_3_4.speaker = Speaker.JM;
 
 
 let codeHTML = new CodeFragment();
