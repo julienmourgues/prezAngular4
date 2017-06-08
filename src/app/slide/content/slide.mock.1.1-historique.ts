@@ -1,4 +1,4 @@
-import {Slide, ImageFragment, ListFragment, Speaker} from "../slide.model";
+import {Slide, ImageFragment, ListFragment, Speaker, HTMLFragment} from "../slide.model";
 import {TITRE1} from "../slide.constantes";
 
 export const SLIDE_1_1: Slide = new Slide();
@@ -16,6 +16,16 @@ list1.pushContent('<div class="row"><div class="col-sm-4">23 Mars 2017</div><div
 list1.pushContent('<div class="row"><div class="col-sm-4">17 Mai 2017</div><div class="col-sm-8">Version stable Angular 4.1 (4.1.3)</div></div>');
 list1.hideOnStep=1;
 SLIDE_1_1.pushFragments(list1);
+
+
+let html1 = new HTMLFragment();
+html1.content=`Terminologie :
+<ul>
+<li>AngularJS = Angular 1.X </li>
+<li>Angular = Angular > 1.X </li>
+</ul>`;
+html1.stepNumber=1;
+SLIDE_1_1.pushFragments(html1);
 
 let tendance = new ImageFragment();
 tendance.className='tendance vertical-center';

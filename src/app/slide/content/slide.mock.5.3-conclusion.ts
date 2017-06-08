@@ -18,6 +18,5 @@ SLIDE_5_3.pushFragments(list1);
 let html = new HTMLFragment();
 html.innerClassName = 'alert alert-info';
 html.content = 'Les sources de cette présentation sont sous mon Github : <a href="https://github.com/julienmourgues/prezAngular4">https://github.com/julienmourgues/prezAngular4</a>';
-html.stepNumber = 1;
 SLIDE_5_3.pushFragments(html);
 

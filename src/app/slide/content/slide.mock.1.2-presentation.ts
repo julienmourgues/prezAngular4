@@ -18,19 +18,5 @@ list1.pushContent('Templates');
 list1.pushContent('Pipes');
 list1.pushContent('Metadata');
 list1.pushContent('Services / Dependency injection');
-list1.pushContent('Modules');
 list1.pushContent('Router');
-list1.pushContent('Testing');
-list1.stepNumber = 1;
-list1.hideOnStep = 2;
 SLIDE_1_2.pushFragments(list1);
-
-
-
-let list2 = new ListFragment();
-list2.pushContent('Animations');
-list2.pushContent('Forms');
-list2.pushContent('HTTP');
-list2.pushContent('Lifecycle hooks');
-list2.stepNumber=2;
-SLIDE_1_2.pushFragments(list2);

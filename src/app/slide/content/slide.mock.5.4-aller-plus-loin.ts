@@ -1,4 +1,4 @@
-import {Slide, SubTitleFragment, ListFragment, ImageFragment} from "../slide.model";
+import {Slide, SubTitleFragment, ListFragment, ImageFragment, HTMLFragment} from "../slide.model";
 import {TITRE6} from "../slide.constantes";
 
 export const SLIDE_5_4: Slide = new Slide();

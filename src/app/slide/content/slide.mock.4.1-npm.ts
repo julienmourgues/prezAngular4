@@ -13,66 +13,6 @@ let list = new ListFragment();
 list.pushContent('Point d\'entrée');
 list.pushContent('Gestionnaire de dépendances');
 list.pushContent('Lanceur de tâches');
+list.pushContent('Alternative : YARN');
 list.hideOnStep = 1;
 SLIDE_4_1.pushFragments(list);
-
-
-
-
-let subTitle2 = new SubTitleFragment();
-subTitle2.content = 'NPM - Gestionnaire de dépendances (Alternative : YARN)';
-subTitle2.stepNumber = 1;
-subTitle2.hideOnStep = 2;
-SLIDE_4_1.pushFragments(subTitle2);
-
-let code1 = new CodeFragment();
-code1.content = `
-<pre>
-    <code class="javascript highlight">//package.json
-{
-    "dependencies": {
-    "@angular/common": "4.0.0",
-    "@angular/compiler": "4.0.0",
-    "@angular/core": "4.0.0",
-    "@angular/forms": "4.0.0",
-    "@angular/http": "4.0.0",
-    "@angular/platform-browser": "4.0.0",
-    "@angular/platform-browser-dynamic": "4.0.0",
-    "@angular/router": "4.0.0",
-    "core-js": "^2.4.1",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "^5.0.1",
-    "typescript": "^2.2.1",
-    "zone.js": "^0.6.23"
-  },
-  "devDependencies": {
-    "lite-server": "^2.2.2",
-    "typescript": "^2.0.2",
-    "typings":"^1.3.2"
-  }}</code>
-</pre>`;
-code1.stepNumber = 1;
-code1.hideOnStep = 2;
-SLIDE_4_1.pushFragments(code1);
-
-let subTitle3 = new SubTitleFragment();
-subTitle3.content = 'NPM - Lanceur de tâches';
-subTitle3.stepNumber = 2;
-SLIDE_4_1.pushFragments(subTitle3);
-
-let code2 = new CodeFragment();
-code2.content = `
-<pre>
-    <code class="javascript highlight">//package.json (suite)
-{
-  "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 5000",
-    "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "postinstall": "typings install"
-}</code>
-</pre>
-`;
-code2.stepNumber = 2;
-SLIDE_4_1.pushFragments(code2);
-

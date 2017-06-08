@@ -37,29 +37,3 @@ export class RoutingComponent  { }</code>
 </pre>`;
 code2.hideOnStep=1;
 SLIDE_3_7.pushFragments(code2);
-
-let code3 = new CodeFragment();
-code3.content = `<pre>
-    <code class="typescript highlight">// router.component.ts
-@Component({
-    selector: 'router',
-    templateUrl: './router.component.html'
-})
-export class RouterComponent implements OnInit {
-    title: string = '';
-    color: string = '';
-
-    constructor(private _router: Router,  private _activatedRoute: ActivatedRoute ) { }
-
-    ngOnInit() {
-        this._activatedRoute.data.forEach(data => { this.title = data['title']; this.color = data['color']; });
-    }
-
-    clickDemo1() { this._router.navigate(['/demo1']); }
-    clickDemo2() { this._router.navigate(['/demo2']); }
-    clickBack()  { this._router.navigate(['/']); }
-
-}</code>
-</pre>`;
-code3.stepNumber=1;
-SLIDE_3_7.pushFragments(code3);

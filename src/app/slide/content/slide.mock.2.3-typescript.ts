@@ -20,11 +20,5 @@ let quote1 = new QuoteFragment();
 quote1.content = `
 <strong>At ng-conf 2017, Brad Green, Engineering Director at Google, indicated that TypeScript is now an official language at Google. 
 For developers worrying about Dart status, he clarified that both Dart and TypeScript will be in the same category.</strong>`;
-quote1.stepNumber = 1;
 SLIDE_2_3.pushFragments(quote1);
 
-let html = new HTMLFragment();
-html.innerClassName = 'alert alert-info';
-html.content = 'Proche du langage Google Dart';
-html.stepNumber = 2;
-SLIDE_2_3.pushFragments(html)

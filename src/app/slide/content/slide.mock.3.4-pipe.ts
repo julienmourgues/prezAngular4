@@ -49,5 +49,5 @@ export class MyFilterPipe implements PipeTransform {
         return items.filter(item => item.indexOf(filtre) !== -1);
     }
 }</code></pre>`;
-code.stepNumber=1
+//code.stepNumber=1
 SLIDE_3_4.pushFragments(code);
