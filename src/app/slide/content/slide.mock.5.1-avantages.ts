@@ -11,7 +11,7 @@ SLIDE_5_1.pushFragments(subTitle);
 let list1 = new ListFragment();
 list1.pushContent('Clarté du code');
 list1.pushContent('Fonctionnalités du framework');
-list1.pushContent('Typage (Typescript)');
+list1.pushContent('Typescript');
 list1.pushContent('Outils de développement');
 list1.pushContent('Performances');
 list1.pushContent('Documentation, styleguide, cookbook');
