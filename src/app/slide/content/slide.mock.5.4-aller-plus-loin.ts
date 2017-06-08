@@ -11,6 +11,7 @@ SLIDE_5_4.pushFragments(subTitle);
 let list1 = new ListFragment();
 list1.pushContent('<a href="http://angular.io">Documentation</a>');
 list1.pushContent('<a href="http://angularconnect.com">Angular Connect</a>');
+list1.pushContent('<a href="https://github.com/julienmourgues/prezAngular4/releases/tag/1.1.0">Version enrichie de la présentation sur Angular</a>');
 SLIDE_5_4.pushFragments(list1);
 
 let acImg = new ImageFragment();
