@@ -23,7 +23,7 @@
     "@angular/router": "^4.0.0",
     "@angular/upgrade": "2.0.0",
     "angular2-highlight-js": "3.0.0",
-    "bootstrap": "4.0.0-alpha.3",
+    "bootstrap": "4.0.0",
     "core-js": "2.4.1",
     "font-awesome": "4.6.3",
     "jquery": "3.1.0",
